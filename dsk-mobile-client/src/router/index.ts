@@ -3,10 +3,30 @@ import HomeView from '../views/HomeView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path:'/',
+    redirect:'/home/bookstore'
   },
+  {
+    path: '/home',
+    component: HomeView,
+    children:[{
+      path: 'bookstore',
+      component: () => import('../views/bookstore/BookStore.vue'),
+      meta: {
+        keepAlive: true // 自定义的meta属性，用于表示该路由要保活
+      }
+     },{
+          path: 'bookshelf',
+          component: () => import('../views/bookshelf/BookShelf.vue')
+        },{
+          path: 'classification',
+          component: () => import('../views/classification/Classification.vue')
+        },
+        {
+          path: 'me',
+          component: () => import('../views/me/Me.vue')
+        }]
+     },
   {
     path: '/about',
     name: 'about',
