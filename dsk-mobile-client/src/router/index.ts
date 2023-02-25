@@ -25,6 +25,14 @@ const routes: Array<RouteRecordRaw> = [
         {
           path: 'me',
           component: () => import('../views/me/Me.vue')
+        },
+        {
+          path: 'more',
+          component: () => import('../views/bookstore/More.vue')
+        },
+        {
+          path: 'search',
+          component: () => import('../views/bookstore/Search.vue')
         }]
      },
   {
