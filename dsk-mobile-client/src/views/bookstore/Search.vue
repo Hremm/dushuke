@@ -12,10 +12,15 @@
         <div class="search">历史搜索/热门搜索</div>
         <h4>猜你喜欢</h4>
         <div class="book">
-        <img src="../../assets/sspl.jpg">
-        <p>生死疲劳</p>
-        <p class="p1">阅读《斗破苍穹》的人也在看</p>
-      </div>
+            <img src="../../assets/sspl.jpg">
+            <p>生死疲劳</p>
+            <p>阅读《斗破苍穹》的人也在看</p>
+        </div>
+        <div class="book">
+            <img src="../../assets/img/dp.png" style="margin-top: 10px;">
+            <p>斗破苍穹</p>
+            <p>阅读《斗破苍穹》的人也在看</p>
+        </div>
     </div>
 </template>
 
@@ -32,4 +37,20 @@
         float: left;
         margin-left: 50px;
     }
+    .book{
+    width: 375px;
+    height: 140px; 
+    float: left;
+  }
+  p{
+    display: flex;
+    margin-left: 140px;
+  }
+  img{
+    width: 30%;
+    height: 140px;
+    float: left;
+    margin-left: 20px;
+    border-radius: 5px;
+  }
 </style>
