@@ -12,32 +12,32 @@
       v-model="active" 
       active-color="#f03d37"
       @change="tabChange">
-      <van-tabbar-item name="/home/index">
-        <span>电影</span>
+      <van-tabbar-item name="/home/bookstore">
+        <span>书城</span>
         <template #icon="props">
           <img :src="require(
             `@/assets/tabs/index_${props.active?1:0 }.png`)" alt="">
         </template>
       </van-tabbar-item>
-      <van-tabbar-item name="/home/video">
-        <span>视频</span>
+      <van-tabbar-item name="/home/classification">
+        <span>分类</span>
         <template #icon="props">
-          <img v-show="!props.active" src="@/assets/tabs/video_0.png" alt="">
-          <img v-show="props.active" src="@/assets/tabs/video_1.png" alt="">
+          <img v-show="!props.active" src="@/assets/tabs/xx.png" alt="">
+          <img v-show="props.active" src="@/assets/tabs/xx.png" alt="">
         </template>
       </van-tabbar-item>
-      <van-tabbar-item name="/home/show">
-        <span>演出</span>
+      <van-tabbar-item name="/home/bookshelf">
+        <span>书架</span>
         <template #icon="props">
-          <img v-show="!props.active" src="@/assets/tabs/show_0.png" alt="">
-          <img v-show="props.active" src="@/assets/tabs/show_1.png" alt="">
+          <img v-show="!props.active" src="@/assets/tabs/xx.png" alt="">
+          <img v-show="props.active" src="@/assets/tabs/xx.png" alt="">
         </template>
       </van-tabbar-item>
       <van-tabbar-item name="/home/me">
         <span>我的</span>
         <template #icon="props">
-          <img v-show="!props.active" src="@/assets/tabs/me_0.png" alt="">
-          <img v-show="props.active" src="@/assets/tabs/me_1.png" alt="">
+          <img v-show="!props.active" src="@/assets/tabs/xx.png" alt="">
+          <img v-show="props.active" src="@/assets/tabs/xx.png" alt="">
         </template>
       </van-tabbar-item>
     </van-tabbar>
