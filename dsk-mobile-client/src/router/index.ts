@@ -29,11 +29,19 @@ const routes: Array<RouteRecordRaw> = [
         {
           path: 'headpicture',
           component: () => import('../views/me/HeadPicture.vue')
+        },  
+        {
+          path: 'footprint',
+          component: () => import('../views/me/FootPrint.vue')
         },        
         {
-          path: 'readingpreference',
-          component: () => import('../views/me/ReadingPreference.vue')
-        },
+          path: 'set',
+          component: () => import('../views/me/Set.vue')
+        }, 
+        {
+          path: 'opinion',
+          component: () => import('../views/me/Opinion.vue')
+        }, 
       ]
      },
   {
