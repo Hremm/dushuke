@@ -4,7 +4,7 @@
             title="书籍列表"
             left-text="返回"
             left-arrow
-            @click-left="onClickLeft"
+            @click-left="$router.go(-1)"
             />
         <div class="book">
             <img src="../../assets/sspl.jpg">
@@ -65,6 +65,9 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+const router = useRouter()  // 获取路由管理器对象
 
 </script>
 
