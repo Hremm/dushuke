@@ -42,6 +42,16 @@ const routes: Array<RouteRecordRaw> = [
           name: 'details',
           component: () => import('../views/bookstore/Details.vue')
         },
+        {
+          path: '/home/directory',
+          name: 'directory',
+          component: () => import('../views/bookstore/Directory.vue')
+        },
+        {
+          path: '/home/comment',
+          name: 'comment',
+          component: () => import('../views/bookstore/Comment.vue')
+        },
   {
     path: '/about',
     name: 'about',
