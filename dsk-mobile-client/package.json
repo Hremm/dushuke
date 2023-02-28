@@ -10,7 +10,9 @@
     "core-js": "^3.8.3",
     "vant": "^4.0.10",
     "vue": "^3.2.13",
+    "vue-cropper": "^0.5.8",
     "vue-router": "^4.0.3",
+    "vue3-cropper": "^0.4.0",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
