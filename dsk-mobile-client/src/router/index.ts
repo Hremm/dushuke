@@ -31,7 +31,6 @@ const routes: Array<RouteRecordRaw> = [
           component: () => import('../views/me/HeadPicture.vue')
         },  
         {
-<<<<<<< HEAD
           path: 'footprint',
           component: () => import('../views/me/FootPrint.vue')
         },        
@@ -47,9 +46,11 @@ const routes: Array<RouteRecordRaw> = [
           path: 'personal',
           component: () => import('../views/me/Personal.vue')
         }, 
-      ]
-     },
-=======
+        {
+          path: 'safety',
+          component: () => import('../views/me/Safety.vue')
+        }, 
+        {
           path: '/home/details',
           name: 'details',
           component: () => import('../views/bookstore/Details.vue')
@@ -64,7 +65,8 @@ const routes: Array<RouteRecordRaw> = [
           name: 'comment',
           component: () => import('../views/bookstore/Comment.vue')
         },
->>>>>>> 38a862146eb2471dcef2b6f3cf4b10d610eea4a5
+      ]
+     },
   {
     path: '/about',
     name: 'about',

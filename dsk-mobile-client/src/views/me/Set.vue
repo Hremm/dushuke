@@ -1,8 +1,12 @@
 <template>
   <div>
-    <van-nav-bar left-arrow title="系统设置" />
+    <van-nav-bar @click-left="$router.go(-1)" left-arrow title="系统设置" />
+    <van-divider
+  :style="{borderColor: '#d8d8d8' , padding: '0 16px'}"
+>
+</van-divider>
 
-    <view class="rade">
+    <view @click="$router.push('/home/Safety')" class="rade">
         <p>账号与安全</p>
         <van-icon class="tubiao" name="arrow"/>
     </view>

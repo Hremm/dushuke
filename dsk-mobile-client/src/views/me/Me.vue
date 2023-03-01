@@ -1,7 +1,7 @@
 <template>
     <div>
       <div class="header">
-        <img src="../../assets/tabs/me_0.png" alt="">
+        <img @click="$router.push('/home/Personal')"  src="../../assets/tabs/me_0.png" alt="">
         <div class="title">
           <p>用户名10293</p>
           <span @click="$router.push('/home/HeadPicture')">编辑个人资料</span>

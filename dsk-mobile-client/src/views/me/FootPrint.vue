@@ -1,6 +1,6 @@
 <template>
   <div class="bgco">
-    <van-nav-bar title="我的足迹" left-text="返回" left-arrow>
+    <van-nav-bar @click-left="$router.go(-1)" title="我的足迹" left-text="返回" left-arrow>
   <template #right>
     <van-icon name="search" size="18" />
   </template>

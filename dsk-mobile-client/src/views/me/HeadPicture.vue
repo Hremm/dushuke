@@ -3,15 +3,20 @@
     <van-nav-bar
       title="编辑资料"
       left-arrow
-      @click-left="onClickLeft"
+      
+      @click-left="$router.go(-1)"
     />
+    <van-divider
+  :style="{borderColor: '#d8d8d8' , padding: '0 16px'}"
+>
+</van-divider>
     <!-- 圆形头像 -->
     <van-image
         round
         fit="cover"
         width="5rem"
         height="5rem"
-        src="@/assets/tabs/qiandao.png"
+        src="../../assets/img/cl.png"
       />
       <p style="font-size: 16px;">点击更换头像</p>
 
