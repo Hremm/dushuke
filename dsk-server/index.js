@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3010; // 服务端口
+const port = 3060; // 服务端口
 
 const jwt = require("jsonwebtoken");
 const JWT_SECRET_KEY = "JWT_SECRET_KEY";
@@ -27,10 +27,10 @@ const tokenTools = function (req, resp, next) {
   }
 
   // 测试环境中，不做token拦截，直接执行后续业务
-  if (1 == 1) {
-    next();
-    return;
-  }
+  //if (1 == 1) {
+   // next();
+  //  return;
+ // }
 
 
   // 执行token验证
@@ -52,6 +52,7 @@ app.use(tokenTools);
 app.use(require("./router/Admin.js"));
 app.use(require("./router/BookAuthor.js"))
 app.use(require('./router/BookDetails.js'))
+app.use(require('./router/BookStore.js'))
 
 /**
  * 接口， 处理/请求
