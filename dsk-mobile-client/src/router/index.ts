@@ -51,6 +51,10 @@ const routes: Array<RouteRecordRaw> = [
           component: () => import('../views/me/Safety.vue')
         }, 
         {
+          path: 'privacy',
+          component: () => import('../views/me/Privacy.vue')
+        }, 
+        {
           path: '/home/directory',
           name: 'directory',
           component: () => import('../views/bookstore/Directory.vue')
@@ -59,11 +63,17 @@ const routes: Array<RouteRecordRaw> = [
           path: '/home/comment',
           name: 'comment',
           component: () => import('../views/bookstore/Comment.vue')
-        },{
-           path: '/home/more',
-           name: 'more',
-           component: () => import('../views/bookstore/More.vue')
-           },
+        },
+        {
+          path: '/home/more',
+          name: 'more',
+          component: () => import('../views/bookstore/More.vue')
+        },
+        {
+          path: '/home/more',
+          name: 'more',
+          component: () => import('../views/bookstore/More.vue')
+          },
            
       ]
       

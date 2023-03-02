@@ -10,7 +10,7 @@
         <p>账号与安全</p>
         <van-icon class="tubiao" name="arrow"/>
     </view>
-    <view class="rade">
+    <view @click="$router.push('/home/Privacy')" class="rade">
         <p>隐私设置</p>
         <van-icon class="tubiao" name="arrow"/>
     </view>
