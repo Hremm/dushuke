@@ -11,6 +11,8 @@
     "vant": "^4.0.10",
     "vue": "^3.2.13",
     "vue-cropper": "^0.5.8",
+    "vue-image-cutting": "^0.2.5",
+    "vue-resource": "^1.5.3",
     "vue-router": "^4.0.3",
     "vue3-cropper": "^0.4.0",
     "vuex": "^4.0.0"
