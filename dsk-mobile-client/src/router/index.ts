@@ -51,10 +51,9 @@ const routes: Array<RouteRecordRaw> = [
           component: () => import('../views/me/Safety.vue')
         }, 
         {
-          path: '/home/details',
-          name: 'details',
-          component: () => import('../views/bookstore/Details.vue')
-        },
+          path: 'privacy',
+          component: () => import('../views/me/Privacy.vue')
+        }, 
         {
           path: '/home/directory',
           name: 'directory',
@@ -65,8 +64,30 @@ const routes: Array<RouteRecordRaw> = [
           name: 'comment',
           component: () => import('../views/bookstore/Comment.vue')
         },
+        {
+          path: '/home/more',
+          name: 'more',
+          component: () => import('../views/bookstore/More.vue')
+        },
+        {
+          path: '/home/more',
+          name: 'more',
+          component: () => import('../views/bookstore/More.vue')
+          },
+           
       ]
+      
      },
+     {
+       path: '/home/search',
+       name: 'search',
+       component: () => import('../views/bookstore/Search.vue')
+   },
+   {
+    path: '/home/details',
+    name: 'details',
+    component: () => import('../views/bookstore/Details.vue')
+  },
   {
     path: '/about',
     name: 'about',

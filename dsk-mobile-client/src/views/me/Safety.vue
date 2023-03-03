@@ -8,7 +8,7 @@
 
     <view class="rade">
         <p>绑定手机号</p>
-        <span class="phone">188****9999</span>
+        <p style="margin: 0;" class="phone">188****9999</p>
         <span>已绑定</span>
     </view>
     <view class="rade">

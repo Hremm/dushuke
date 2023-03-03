@@ -5,12 +5,14 @@
       shape="round"
       background="#4fc08d"
       placeholder="请输入搜索关键词"/>
+      <div >
       <VanSwipe class="my-swipe" :autoplay="3000" indicator-color="white">
         <VanSwipeItem>1</VanSwipeItem>
         <VanSwipeItem>2</VanSwipeItem>
         <VanSwipeItem>3</VanSwipeItem>
         <VanSwipeItem>4</VanSwipeItem>
       </VanSwipe>
+      </div>
       <div class="er">
         <span class="c1">猜你喜欢</span>
       <button class="btn" @click="$router.push('/home/more')">更多 ></button>
@@ -100,6 +102,7 @@ const router = useRouter()
     line-height: 150px;
     text-align: center;
     background-color: #39a9ed;
+    
   }
   .c1 {
     margin-left: 20px;
