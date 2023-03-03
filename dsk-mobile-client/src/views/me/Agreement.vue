@@ -38,6 +38,6 @@ p {
   text-indent: 2em;
   margin: 0 20px;
   margin-top: 10px;
-  text-align:left
+  text-align:left;
 }
 </style>
