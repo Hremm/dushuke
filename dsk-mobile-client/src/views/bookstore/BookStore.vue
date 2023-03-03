@@ -3,14 +3,15 @@
       <van-search class="nav" v-model="value"
       @click="$router.push('/home/search')"
       shape="round"
-      fixed placeholder="请输入搜索关键词" />
-      <div class="h1"></div>
+      background="#4fc08d"
+      placeholder="请输入搜索关键词"/>
       <VanSwipe class="my-swipe" :autoplay="3000" indicator-color="white">
         <VanSwipeItem><img src="../../assets/img/sy_1.png" style="height: 150px; background-size: cover; margin: 0px; padding: 0px;"></VanSwipeItem>
         <VanSwipeItem><img src="../../assets/img/sy_2.png" style="height: 150px; background-size: cover; margin: 0px; padding: 0px;"></VanSwipeItem>
         <VanSwipeItem><img src="../../assets/img/sy_3.png" style="height: 150px; background-size: cover; margin: 0px; padding: 0px;"></VanSwipeItem>
         <VanSwipeItem><img src="../../assets/img/sy_2.png" style="height: 150px; background-size: cover; margin: 0px; padding: 0px;"></VanSwipeItem>
       </VanSwipe>
+      </div>
       <div class="er">
         <span class="c1">猜你喜欢</span>
       <button class="btn" @click="$router.push('/home/more')">更多 ></button>
@@ -109,6 +110,7 @@ const router = useRouter()
     line-height: 150px;
     text-align: center;
     background-color: #39a9ed;
+    
   }
   .c1 {
     margin-left: 20px;

@@ -1,0 +1,61 @@
+<template>
+  <div>
+    <Vue-imageCutting
+        :picturePath="picturePathData"  
+        :buttonColor="buttonColorData" 
+        :backgroundColor="backgroundColorData" 
+        :iconColor="iconColorData" 
+        :format="formatData" 
+        :crossDomain="crossDomainData" 
+        :maskOpacity="maskOpacityData" 
+        :minZoom="minZoomData" 
+        :maxZoom="maxZoomData" 
+        @confirm="confirmMethod" 
+        @cancel="cancelMethod" 
+        @rotate="rotateMethod" 
+        @restore="restoreMethod" 
+        @loading="loadingMethod" 
+        @touching="touchingMethod" 
+    />
+  </div>
+</template>
+<script>
+import VueImageCutting from 'vue-image-cutting'
+import 'vue-image-cutting/lib/VueImageCutting.css'
+Vue.use(VueImageCutting)
+  export default {
+    data () {
+      return {
+        maskOpacityData:0.7,
+        formatData:"jpeg",
+        minZoomData:0.5,
+        crossDomainData:false,
+        maxZoomData:3,
+        iconColorData:"#ffffff",
+        backgroundColorData:'#000000',
+        buttonColorData:'#0e9a00',
+        picturePathData:"../../assets/img/cl.png"
+      }
+    },
+    methods:{
+        touchingMethod(event){
+            console.log(event)
+        },
+        restoreMethod(event){
+            console.log(event)
+        },
+        rotateMethod(event){
+            console.log(event)
+        },
+        cancelMethod(event){
+            console.log(event)
+        },
+        loadingMethod(event){
+            console.log(event)
+        },
+        confirmMethod(event){
+            console.log(event)
+        }
+    }
+  }
+</script>

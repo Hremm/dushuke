@@ -25,23 +25,35 @@ const routes: Array<RouteRecordRaw> = [
         {
           path: 'me',
           component: () => import('../views/me/Me.vue')
-        },
-        ]
-     },{
-          path: '/home/more',
-          name: 'more',
-          component: () => import('../views/bookstore/More.vue')
-        },
+        },        
         {
-          path: '/home/search',
-          name: 'search',
-          component: () => import('../views/bookstore/Search.vue')
-        },
+          path: 'headpicture',
+          component: () => import('../views/me/HeadPicture.vue')
+        },  
         {
-          path: '/home/details',
-          name: 'details',
-          component: () => import('../views/bookstore/Details.vue')
-        },
+          path: 'footprint',
+          component: () => import('../views/me/FootPrint.vue')
+        },        
+        {
+          path: 'set',
+          component: () => import('../views/me/Set.vue')
+        }, 
+        {
+          path: 'opinion',
+          component: () => import('../views/me/Opinion.vue')
+        }, 
+        {
+          path: 'personal',
+          component: () => import('../views/me/Personal.vue')
+        }, 
+        {
+          path: 'safety',
+          component: () => import('../views/me/Safety.vue')
+        }, 
+        {
+          path: 'privacy',
+          component: () => import('../views/me/Privacy.vue')
+        }, 
         {
           path: '/home/directory',
           name: 'directory',
@@ -52,13 +64,37 @@ const routes: Array<RouteRecordRaw> = [
           name: 'comment',
           component: () => import('../views/bookstore/Comment.vue')
         },
+        {
+          path: '/home/more',
+          name: 'more',
+          component: () => import('../views/bookstore/More.vue')
+        },
+        {
+          path: '/home/more',
+          name: 'more',
+          component: () => import('../views/bookstore/More.vue')
+          },
+           
+      ]
+      
+     },
+     {
+       path: '/home/search',
+       name: 'search',
+       component: () => import('../views/bookstore/Search.vue')
+   },
+   {
+    path: '/home/details',
+    name: 'details',
+    component: () => import('../views/bookstore/Details.vue')
+  },
   {
     path: '/about',
     name: 'about',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('../views/AboutView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   }
 ]
 

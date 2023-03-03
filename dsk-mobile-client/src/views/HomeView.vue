@@ -15,10 +15,6 @@
       @change="tabChange">
       <van-tabbar-item name="/home/bookstore">
         <span>书城</span>
-        <template #icon="props">
-          <img :src="require(
-            `@/assets/tabs/bookstore_${props.active?1:0 }.png`)" alt="">
-        </template>
       </van-tabbar-item>
       <van-tabbar-item name="/home/classification">
         <span>分类</span>
@@ -53,7 +49,7 @@ const router = useRouter()  // 获取路由管理器对象
 const active = ref('/home/bookstore')
 const tabChange = function(bookstore:string){
   router.push(bookstore)
-}
+} 
 
 
 </script> 
