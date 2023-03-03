@@ -9,6 +9,7 @@
 
     <!-- 底部选项卡 -->
     <van-tabbar 
+    fixed placeholder
       v-model="active" 
       active-color="#1afa29"
       @change="tabChange">
