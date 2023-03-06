@@ -1,5 +1,5 @@
 <template>
-  <div class="bgco">
+  <div id="bgco">
     <van-nav-bar fixed placeholder @click-left="$router.go(-1)" title="隐私设置" left-text="返回" left-arrow>
     </van-nav-bar>
 
@@ -37,13 +37,15 @@ import { showConfirmDialog } from 'vant';
 
 </script>
 
-<style scoped>
-.bgco {
-  background-color: #e8eaed; 
-}
+<style>
+
+ body{
+   height: 100vh;
+   background-color: #ece9e9; 
+  }
 .biao {
   margin-top: 10px;
-
+  
 }
 template{
   height: 100vh;
