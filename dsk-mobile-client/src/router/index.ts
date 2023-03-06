@@ -33,7 +33,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/home/headpicture",
-    name: "/home/headpicture",
+    name: "headpicture",
     component: () => import("../views/me/HeadPicture.vue"),
   },
   {
