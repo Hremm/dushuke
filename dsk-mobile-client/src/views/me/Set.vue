@@ -14,11 +14,11 @@
         <p>隐私设置</p>
         <van-icon class="tubiao" name="arrow"/>
     </view>
-    <view class="rade">
+    <view @click="$router.push('/home/Reading')" class="rade">
         <p>阅读设置</p>
         <van-icon class="tubiao" name="arrow"/>
     </view>
-    <view class="rade">
+    <view @click="$router.push('/home/Notice')" class="rade">
         <p>通知设置</p>
         <van-icon class="tubiao" name="arrow"/>
     </view>
@@ -26,7 +26,7 @@
         <p>清除缓存</p>
         <van-icon class="tubiao" name="arrow"/>
     </view>
-    <view class="rade">
+    <view @click="$router.push('/home/We')" class="rade">
         <p>关于我们</p>
         <van-icon class="tubiao" name="arrow"/>
     </view>

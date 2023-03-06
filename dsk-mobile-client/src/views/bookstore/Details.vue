@@ -1,8 +1,8 @@
 <template>
     <div>
         <van-nav-bar
+        fixed placeholder
             left-text="返回"
-            fixed placeholder
             left-arrow
             @click-left="$router.go(-1)"
             />

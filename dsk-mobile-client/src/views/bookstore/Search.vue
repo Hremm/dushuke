@@ -1,8 +1,7 @@
 <template>
     <div>
         <form action="/">
-        <van-search
-            class="nav"
+        <van-search class="nav"
             v-model="value"
             show-action
             placeholder="请输入搜索关键词"
@@ -37,7 +36,7 @@ const router = useRouter()  // 获取路由管理器对象
 
  const value = ref('');
  const onSearch = (val: string|ToastOptions) => showToast(val);
- const onCancel = () => showToast(value.value);
+ const onCancel = () => showToast('取消');
   
 
 
@@ -48,12 +47,10 @@ const router = useRouter()  // 获取路由管理器对象
 .nav{
     position: fixed;
     top: 0px;
-    left: 0px;
     width: 100%;
-    z-index: 999;
   }
   .h1{
-    height: 54px;
+    height: 50px;
   }
 .search{
         height: 300px;

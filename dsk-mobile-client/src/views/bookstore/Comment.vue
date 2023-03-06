@@ -17,11 +17,7 @@
         />
         </van-cell-group>
         <div class="content"></div>
-<<<<<<< HEAD
-        <van-button round type="success" size="large" style="width: 80%; margin-top: 20%;">确定</van-button>
-=======
         <van-button round type="success" size="large" style="width: 80%; margin-top: 20%;">确认</van-button>
->>>>>>> f38edc43a89680a73592dfdfbc7b209093f0f3bc
     </div>
 </template>
 

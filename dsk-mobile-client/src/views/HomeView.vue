@@ -15,6 +15,10 @@
       @change="tabChange">
       <van-tabbar-item name="/home/bookstore">
         <span>书城</span>
+        <template #icon="props">
+        <img v-show="!props.active" src="@/assets/tabs/bookstore_0.png" alt="">
+          <img v-show="props.active" src="@/assets/tabs/bookstore_1.png" alt="">
+        </template>
       </van-tabbar-item>
       <van-tabbar-item name="/home/classification">
         <span>分类</span>

@@ -1,13 +1,6 @@
 <template>
     <div>
-
-      <van-nav-bar
-        title="标题"
-        left-text="返回"
-        right-text="按钮"
-        left-arrow
-      />
-
+      <van-empty>分类，敬请期待</van-empty>
     </div>
   </template>
   

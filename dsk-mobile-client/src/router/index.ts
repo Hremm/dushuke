@@ -25,59 +25,84 @@ const routes: Array<RouteRecordRaw> = [
         {
           path: 'me',
           component: () => import('../views/me/Me.vue')
-        },        
-        {
-          path: 'headpicture',
-          component: () => import('../views/me/HeadPicture.vue')
-        },  
-        {
-          path: 'footprint',
-          component: () => import('../views/me/FootPrint.vue')
-        },        
-        {
-          path: 'set',
-          component: () => import('../views/me/Set.vue')
         }, 
-        {
-          path: 'opinion',
-          component: () => import('../views/me/Opinion.vue')
-        }, 
-        {
-          path: 'personal',
-          component: () => import('../views/me/Personal.vue')
-        }, 
-        {
-          path: 'safety',
-          component: () => import('../views/me/Safety.vue')
-        }, 
-        {
-          path: 'privacy',
-          component: () => import('../views/me/Privacy.vue')
-        }, 
-        {
-          path: '/home/directory',
-          name: 'directory',
-          component: () => import('../views/bookstore/Directory.vue')
-        },
-        {
-          path: '/home/comment',
-          name: 'comment',
-          component: () => import('../views/bookstore/Comment.vue')
-        },
-        {
-          path: '/home/more',
-          name: 'more',
-          component: () => import('../views/bookstore/More.vue')
-        },
-        {
-          path: '/home/more',
-          name: 'more',
-          component: () => import('../views/bookstore/More.vue')
-          },
-           
       ]
-      
-     },
+     },        
+     {
+        path: '/home/headpicture',
+        name: '/home/headpicture',
+        component: () => import('../views/me/HeadPicture.vue')
+        },  
+     {
+      path: '/home/footprint',
+      name: 'footprint',
+      component: () => import('../views/me/FootPrint.vue')
+    },        
+    {
+      path: '/home/set',
+      name: 'set',
+      component: () => import('../views/me/Set.vue')
+    }, 
+    {
+      path: '/home/opinion',
+      name: 'opinion',
+      component: () => import('../views/me/Opinion.vue')
+    }, 
+    {
+      path: '/home/personal',
+      name: 'personal',
+      component: () => import('../views/me/Personal.vue')
+    }, 
+    {
+      path: '/home/safety',
+      name: 'safety',
+      component: () => import('../views/me/Safety.vue')
+    }, 
+    {
+      path: '/home/privacy',
+      name: 'privacy',
+      component: () => import('../views/me/Privacy.vue')
+    }, 
+    {
+      path: '/home/reading',
+      name: 'reading',
+      component: () => import('../views/me/Reading.vue')
+    }, 
+    {
+      path: '/home/notice',
+      name: 'notice',
+      component: () => import('../views/me/Notice.vue')
+    }, 
+    {
+      path: '/home/we',
+      name: 'we',
+      component: () => import('../views/me/We.vue')
+    }, 
+    {
+      path: '/home/agreement',
+      name: 'agreement',
+      component: () => import('../views/me/Agreement.vue')
+    }, 
+    {
+      path: '/home/directory',
+      name: 'directory',
+      component: () => import('../views/bookstore/Directory.vue')
+    },
+    {
+      path: '/home/comment',
+      name: 'comment',
+      component: () => import('../views/bookstore/Comment.vue')
+    },
+    {
+      path: '/home/more',
+      name: 'more',
+      component: () => import('../views/bookstore/More.vue')
+    },
+    {
+      path: '/home/more',
+      name: 'more',
+      component: () => import('../views/bookstore/More.vue')
+      },
      {
        path: '/home/search',
        name: 'search',

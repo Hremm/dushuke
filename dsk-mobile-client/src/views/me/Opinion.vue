@@ -18,10 +18,10 @@
       <van-field class="feed" name="checkboxGroup" label="反馈类型">
         <template #input>
             <van-checkbox-group direction="horizontal">
-              <van-checkbox name="1" shape="square">功能建议</van-checkbox>
-              <van-checkbox name="2" shape="square">程序BUG</van-checkbox>
-              <van-checkbox name="2" shape="square">书籍相关</van-checkbox>
-              <van-checkbox name="2" shape="square">其他</van-checkbox>
+              <van-checkbox class="zi" name="1" shape="square">功能建议</van-checkbox>
+              <van-checkbox class="zi" name="2" shape="square">程序BUG</van-checkbox>
+              <van-checkbox class="zi" name="2" shape="square">书籍相关</van-checkbox>
+              <van-checkbox class="zi" name="2" shape="square">其他</van-checkbox>
             </van-checkbox-group>
             
         </template>
@@ -46,7 +46,10 @@ const router = useRouter()  // 获取路由管理器对象
 }
 .feed{
   display: flex;
-  align-content: center;
-
+  flex-wrap: wrap;
+  flex-direction: column
+}
+.zi {
+  margin-top: 10px;
 }
 </style>

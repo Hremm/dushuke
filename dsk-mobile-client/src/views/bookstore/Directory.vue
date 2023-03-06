@@ -1,6 +1,7 @@
 <template>
     <div>
         <van-nav-bar
+        fixed placeholder
   title="目录"
   left-text="返回"
   left-arrow
