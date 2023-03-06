@@ -1,10 +1,12 @@
 <template>
     <div>
-      <VanSearch
+      <!-- <van-nav-bar fixed placeholder> -->
+      <Van-search 
       @click="$router.push('/home/search')"
       shape="round"
       background="#4fc08d"
       placeholder="请输入搜索关键词"/>
+    <!-- </van-nav-bar> -->
       <div >
       <VanSwipe class="my-swipe" :autoplay="3000" indicator-color="white">
         <VanSwipeItem>1</VanSwipeItem>
