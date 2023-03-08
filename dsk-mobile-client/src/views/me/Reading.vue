@@ -34,8 +34,8 @@ import { showConfirmDialog } from 'vant';
 
 </script>
 
-<style scoped>
+<style>
 .bgco {
-  background-color: #e8eaed; 
+  /* background-color: #e8eaed;  */
 }
 </style>
