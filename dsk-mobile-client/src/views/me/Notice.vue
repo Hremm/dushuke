@@ -1,19 +1,21 @@
 <template>
-  <div class="bgco">
+  <div>
     <van-nav-bar fixed placeholder @click-left="$router.go(-1)" title="通知设置" left-text="返回" left-arrow>
     </van-nav-bar>
 
     <van-divider
   :style="{borderColor: '#d8d8d8' , padding: '0 16px'}"
 ></van-divider>
+    <view class="biao">
+      <van-cell class="xiaoxi" title="接收消息通知">
+        <van-switch v-model="checked"  />
+      </van-cell>
 
-    <van-cell class="biao" title="接收消息通知">
-      <van-switch v-model="checked"  />
-    </van-cell>
+      <van-cell title="接收关注人信息提醒">
+        <van-switch v-model="checked"  />
+      </van-cell>
+    </view>
 
-    <van-cell class="biao" title="接收关注人信息提醒">
-      <van-switch v-model="checked"  />
-    </van-cell>
 
   </div>
 </template>
@@ -35,7 +37,11 @@ import { showConfirmDialog } from 'vant';
 </script>
 
 <style scoped>
-.bgco {
-  background-color: #e8eaed; 
+.biao {
+  display: flex;
+  flex-direction: column;
+}
+.xiaoxi{
+  display: flex;
 }
 </style>
