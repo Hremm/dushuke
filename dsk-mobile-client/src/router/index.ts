@@ -59,7 +59,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/home/safety",
     name: "safety",
-    component: () => import("../views/me/Safety.vue"),
+    component: () => import("../views/me/password/Safety.vue"),
+  },
+  {
+    path: "/home/password",
+    name: "password",
+    component: () => import("../views/me/password/Password.vue"),
   },
   {
     path: "/home/privacy",
@@ -115,6 +120,16 @@ const routes: Array<RouteRecordRaw> = [
     path: "/home/details",
     name: "details",
     component: () => import("../views/bookstore/Details.vue"),
+  },
+  {
+    path: "/home/login",
+    name: "login",
+    component: () => import("../views/login/Login.vue"),
+  },
+  {
+    path: "/home/regester",
+    name: "regester",
+    component: () => import("../views/login/Regester.vue"),
   },
   {
     path: "/about",

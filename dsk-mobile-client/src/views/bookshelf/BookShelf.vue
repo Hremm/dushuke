@@ -19,40 +19,41 @@
       <van-list class="tushulie">
         
         <book-item class="tushu">
-          <img style="width:100px; height:140px;" src="../../assets/sspl.jpg" alt="">
-          <p style="margin-bottom:5px;">生死疲劳</p>
-          <span style="color:#999; font-size:12px">已读1.6%</span>
+          <img src="../../assets/sspl.jpg" alt="">
+          <p>生死疲劳</p>
+          <span>已读1.6%</span>
         </book-item>
 
         <book-item class="tushu">
-          <img style="width:100px; height:140px;" src="../../assets/sspl.jpg" alt="">
-          <p style="margin-bottom:5px;">生死疲劳</p>
-          <span style="color:#999; font-size:12px">已读1.6%</span>
+          <img src="../../assets/sspl.jpg" alt="">
+          <p>生死疲劳</p>
+          <span>已读1.6%</span>
         </book-item>
 
         <book-item class="tushu">
-          <img style="width:100px; height:140px;" src="../../assets/sspl.jpg" alt="">
-          <p style="margin-bottom:5px;">生死疲劳</p>
-          <span style="color:#999; font-size:12px">已读1.6%</span>
+          <img src="../../assets/sspl.jpg" alt="">
+          <p>生死疲劳</p>
+          <span>已读1.6%</span>
         </book-item>
 
         <book-item class="tushu">
-          <img style="width:100px; height:140px;" src="../../assets/sspl.jpg" alt="">
-          <p style="margin-bottom:5px;">生死疲劳</p>
-          <span style="color:#999; font-size:12px">已读1.6%</span>
+          <img src="../../assets/sspl.jpg" alt="">
+          <p>生死疲劳</p>
+          <span>已读1.6%</span>
         </book-item>
         
         <book-item class="tushu">
-          <img style="width:100px; height:140px;" src="../../assets/sspl.jpg" alt="">
-          <p style="margin-bottom:5px;">生死疲劳</p>
-          <span style="color:#999; font-size:12px">已读1.6%</span>
+          <img src="../../assets/sspl.jpg" alt="">
+          <p>生死疲劳</p>
+          <span>已读1.6%</span>
         </book-item>
 
         <book-item class="tushu">
-          <img style="width:100px; height:140px;" src="../../assets/sspl.jpg" alt="">
-          <p style="margin-bottom:5px;">生死疲劳</p>
-          <span style="color:#999; font-size:12px">已读1.6%</span>
+          <img src="../../assets/sspl.jpg" alt="">
+          <p>生死疲劳</p>
+          <span>已读1.6%</span>
         </book-item>
+        
 
       </van-list>
     </van-pull-refresh>
@@ -67,7 +68,7 @@ import { showToast } from 'vant';
   <style scoped>
     .tushulie {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -80,5 +81,17 @@ import { showToast } from 'vant';
       color:#999; 
       font-size:12px;
       text-align: start;
+      
+    }
+    .tushulie .tushu img {
+      width:100px; 
+      height:140px;
+      border-radius: 5px;
+    }
+    .tushulie .tushu{
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      margin:5px 15px ;
     }
   </style>
