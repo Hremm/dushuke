@@ -1,18 +1,15 @@
 <template>
     <div>
-      <!-- <van-nav-bar fixed placeholder> -->
-      <Van-search 
+      <Van-search class="nav"
       @click="$router.push('/home/search')"
-      shape="round"
-      background="#4fc08d"
-      placeholder="请输入搜索关键词"/>
-    <!-- </van-nav-bar> -->
+      shape="round"      placeholder="请输入搜索关键词"/>
+      <div class="h1"></div>
       <div >
       <VanSwipe class="my-swipe" :autoplay="3000" indicator-color="white">
-        <VanSwipeItem>1</VanSwipeItem>
-        <VanSwipeItem>2</VanSwipeItem>
-        <VanSwipeItem>3</VanSwipeItem>
-        <VanSwipeItem>4</VanSwipeItem>
+        <VanSwipeItem><img src="../../assets/img/sy.jpg" style="height: 150px; background-size: cover; margin: 0px; padding: 0px;"></VanSwipeItem>
+        <VanSwipeItem><img src="../../assets/img/sy_1.png" style="height: 150px; background-size: cover; margin: 0px; padding: 0px;"></VanSwipeItem>
+        <VanSwipeItem><img src="../../assets/img/sy_2.png" style="height: 150px; background-size: cover; margin: 0px; padding: 0px;"></VanSwipeItem>
+        <VanSwipeItem><img src="../../assets/img/sy_3.png" style="height: 150px; background-size: cover; margin: 0px; padding: 0px;"></VanSwipeItem>
       </VanSwipe>
       </div>
       <div class="er">
@@ -76,7 +73,6 @@
 就在他即将绝望的时候，一缕灵魂从他手上的戒指里浮现，一扇全新的大门在面前开启！萧炎重新成为家族年轻一辈中的佼佼者，受到众人的仰慕，他却不满足于此。为了一雪退婚带来的耻辱，萧炎来到了魔兽山脉，在药老的帮助下，为了进一步提升自己的修为，在魔兽山脉，他结识了小医仙，云芝（云岚宗宗主云韵）等人，他发现自己面向的世界更加宽广了。
 三十年河东，三十年河西，莫欺少年穷！ 年仅15岁的萧家废物，于此地，立下了誓言，从今以后便一步步走向斗气大陆巅峰！三十年河东，三十年河西，莫欺少年穷！ 年仅15岁的萧家废物，于此地，立下了誓言，从今以后便一步步走向斗气大陆巅峰！</p>
       </div>
-      <div class="h1"></div>
     </div>
 
     
@@ -98,6 +94,11 @@ const router = useRouter()
   </script>
   
   <style scoped>
+  .nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  }
     .my-swipe .van-swipe-item {
     color: #fff;
     font-size: 20px;
@@ -116,6 +117,7 @@ const router = useRouter()
   .btn{
     background-color: #f9f9f9;
     border: 1px solid #f9f9f9;
+    border-radius: 10px;
     float: right;
     color: #999999;
     margin-right: 25px;

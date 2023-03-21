@@ -11,7 +11,7 @@
         <p style="margin: 0;" class="phone">188****9999</p>
         <span>已绑定</span>
     </view>
-    <view class="rade">
+    <view @click="$router.push('/home/password')" class="rade">
         <p>修改密码</p>
         <van-icon class="tubiao" name="arrow"/>
     </view>
